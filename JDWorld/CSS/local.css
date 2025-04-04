@@ -1,0 +1,59 @@
+/* Reset e Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Container Principal */
+.conteiner {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-shadow: 0px 0px 5px 3px darkred;
+    margin: 32px auto;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 60%;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Título */
+.conteiner h2 {
+    font-weight: bold;
+    color: darkred;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Centraliza o iframe */
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilização do Google Maps */
+iframe {
+    width: 100%;
+    height: 458px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteiner {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    iframe {
+        height: 380px; /* Diminui o tamanho do mapa em telas menores */
+    }
+}

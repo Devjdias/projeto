@@ -1,0 +1,571 @@
+/* Reset e Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/* Fontes externas */
+@font-face {
+    font-family: letra;
+    src: url(../fontes/grossa.otf);
+}
+@font-face {
+    font-family: letra1;
+    src: url(../fontes/fina.ttf);
+}
+@font-face {
+    font-family: letra2;
+    src: url(../fontes/Vacancy.otf);
+}
+@font-face {
+    font-family: letra3;
+    src: url(../fontes/normal.otf);
+}
+@font-face {
+    font-family: letra4;
+    src: url(../fontes/redonda.otf);
+}
+/* Estilos Gerais */
+body {
+    font-family: 'open sans', sans-serif;
+    background-color: #F5ECD4;
+}
+section {
+    max-width: 100%;
+    padding:  0 1px;
+}
+/* Estruturas de Layout */
+.topo {
+    width: 100%;
+    padding: 2.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #740505 ;
+    color: #FEF3E2;
+}
+.topo h1 {
+    font-family: letra;
+    color: #fef9e8;
+    font-size: 2.5rem;    
+}
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    background-color: #fef9e8;
+    padding: 10px 20px;
+}
+/* Componentes */
+.logo {
+    width: 60px; 
+    height: auto; 
+}
+img {
+    width: 50px;
+    height: 50px;
+    margin: 50 50px;
+    padding: 5px;
+}
+.social {
+    display: block;
+}
+.home {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    font-size: 1rem;
+}
+ul.home {
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-content: center; 
+    list-style: none;
+    align-items: center;
+    gap: 5%; 
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fef9e810;
+    list-style-type: none;
+    position: relative;
+    border-radius: 20px;
+}
+nav ul li:not(.dropdown) {
+    margin: 0 10px 10px; 
+}
+nav li {
+    margin-right: 8rem;
+    float: left;
+}
+nav ul li a {
+    color: #740505;
+    text-decoration: none;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: #740505;
+    color: white;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px #a31d1da2;
+    padding: 0px;    
+}
+.menu {
+    font-family: 'raleway';
+    font-size: 1rem; 
+    font-weight: bold;
+    background-color: #6d2323c9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; 
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px #a31d1dc0;
+}
+.dropdown {
+    font-family: 'lato';
+    position: absolute;
+    font-size: 1rem;
+    right: 40px; 
+    padding-bottom: 1.5rem;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    background-color: #f1f1f1;
+    min-width: 6rem;
+}
+.dropdown-content a {
+    font-family: 'montserrat';
+    font-size: 1.2rem; 
+    color: #A31D1D;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {
+    background-color: #a31d1db2;
+    color: white;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10%;
+}
+.dropdown:hover .menu {
+    background-color: #a33;
+}
+/* Conteúdo Principal */
+.conteiner {
+    font-family: 'open sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-shadow: 0px 5px 7px rgba(139, 0, 0, 0.705);
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    max-width: 90%;
+    width: 60%;
+    padding: 2rem;
+}
+/* Estilos Específicos */
+.conteiner h2{
+    font-family: letra1; 
+    color: #A31D1D; 
+    text-align: center; 
+    font-weight: bold;
+    font-size: 3rem;
+}
+.conteiner h3 {
+    font-family: 'lora', serif;
+    color: #A31D1D;  
+    text-align: left;
+    font-size: 2rem;
+}
+.conteiner h4 {
+    font-family: letra4;
+    color: #a33;
+    text-align: center;
+    font-size: 2rem;
+}
+.conteiner h5 {
+    font-family: letra2;
+    color: #A31D1D;
+    text-align: left;
+    font-size: 3rem;
+}
+.conteiner h6 {
+    font-family: letra1;
+    color: #A31D1D;
+    text-align: center;
+    font-size: 3rem;
+}
+.flex-modulo {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.lista {
+    flex: 1 1 30%;
+    width: 70px;
+    color: #6d2323bd;
+}
+
+/* Mantém a formatação vermelha */
+.lista-destinos li {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #a31d1dbb; /* Cor original vermelha */
+}
+
+/* Mantém a cor dos links como vermelho e remove o sublinhado */
+.lista-destinos li a {
+    color: #a31d1db6; /* Vermelho */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Efeito Hover */
+.lista-destinos li a:hover {
+    color: #6d2323c7; /* Um tom mais escuro de vermelho */
+    transform: scale(1.1); /* Efeito de zoom leve */
+    text-shadow: 2px 2px 5px rgba(163, 29, 29, 0.5);
+}
+
+.conteiner ul {
+    font-family: letra1;
+    font-size: 2rem;
+    margin: 50px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+}
+
+.imagens-galeria {
+    flex: 2 1 70%;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+.imagens {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}   
+.imagens a {
+    text-decoration: none;
+}
+.imagens:hover {
+    box-shadow: 0px 3px 7px rgba(170, 51, 51, 0.767);
+    transform: scale(0.9);
+    transition: transform 0.4s ease-in-out;
+}
+
+.imagens img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.9rem;
+}
+.desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 5px;    
+    color: #6D2323;
+    letter-spacing: 0.2em;
+    font-style: bold;
+}
+/* Tabela */
+table {
+    overflow-x: auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #6D2323;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #F5ECD5;
+    
+}
+th, td {
+    border: 1px solid #6D2323;
+    padding: 7px;
+    text-align: center;
+}
+tr:hover{
+    background-color: #A31D1D;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+th {
+    font-style: italic;
+    color: #A31D1D;
+}
+th:hover{
+    background-color: #f1f1f1;
+    color: darkred;
+    transition: ease-in-out 0.5s;
+}
+.button {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+.button a {
+    font-family: 'montserrat';
+    font-size: 1.2rem; 
+    color: white;
+    text-decoration: none;
+    background-color: #A31D1D;
+    padding: 2% 2%;
+    border-radius: 50px;
+}
+.button:hover a {
+    background-color: #F5ECD5;
+    color: #6d2323b7;
+    transition: ease-in-out 0.5s;
+}
+/* Rodapé */
+.rodape {
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 1100px;
+    margin:auto;
+    padding: 0px;
+    color: #ebe2e2;
+}
+.rodape a {
+    text-decoration: none;
+    color: #ebe2e2;
+    font-size: 25px;
+    font-family: letra1;
+}
+.rodape a:hover{
+    color: lightblue;
+    transition: ease-in-out 0.5s;
+}
+footer {
+    text-align: center;
+    padding: 0.6%;
+    background-color: #740505;
+    color: rgb(223, 189, 189);
+    font-size: 15px;
+}
+p footer {
+    font-size: 10px;
+    color: #ebe2e2;
+    font-family:monospace;
+}
+.copy {
+    text-align: center;
+    padding: 0;
+    color: rgb(223, 189, 189);
+    font-size: 15px;
+}
+/* Media Queries */
+@media (max-width: 768px){
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+    section {
+        width: 150rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 5rem 0;
+    }
+    .dropdown {
+        margin-left: 0;  
+    }
+    .dropdown-content {
+        position: static;
+    }
+    .topo {
+        padding: 0.5rem;
+    }
+    .topo img {
+        max-width: 8rem; 
+    }
+    .social a {
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner {
+        padding: 1rem;
+        margin: auto;
+        width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1rem;
+    }
+    table {
+        font-size: 1rem;
+    }
+    .flex-modulo {
+        flex-direction: column;
+    }
+    .lista, .imagens-galeria {
+        width: 100%;
+    }
+    .imagens img {
+        width: 100%;
+    }
+    .imagens-coluna {
+        width: 100%;
+    }
+    .lista {
+        width: 100%;
+    }
+    .imagens-galeria {
+        width: 100%;
+        flex-direction: column;
+    }
+    .imagens {
+        width: 100%;
+    }
+}
+
+/* Ícone do Menu Hambúrguer */
+
+.menu-hamburguer {
+    display: none;
+    font-size: 2.5rem;
+    color: #0e0c0c;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;  /* Alterado de right: 20px para left: 20px */
+    top: 15px;
+    z-index: 200;
+}
+
+/* Efeito de transição no ícone do menu */
+.menu-hamburguer ion-icon {
+    transition: transform 1.2s ease-in-out; /* Transição suave */
+}
+
+/* Quando o menu estiver ativo, rotaciona o ícone */
+.menu-hamburguer.active ion-icon {
+    transform: rotate(180deg);
+}
+
+
+/* Estilos do Menu */
+nav ul.home {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 5%;
+    font-size: 1.5rem;
+}
+
+/* Menu Mobile */
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block; /* Agora aparece no mobile */
+    }
+
+    /* Mantém o menu visível no desktop e ajusta no mobile */
+    nav ul.home {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -250px; /* Começa fora da tela */
+        width: 250px;
+        height: 100vh;
+        background: #9c0505b7;
+        text-align: center;
+        padding-top: 60px;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    /* Quando ativado, o menu desliza da direita para a esquerda */
+    nav ul.home.active {
+        right: 0;
+    }
+
+    nav ul.home li {
+        margin: 15px 0;
+    }
+
+    nav ul.home li a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+    }
+
+    nav ul.home li a:hover {
+        background: #A31D1D;
+        border-radius: 5px;
+    }
+}
+
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;  /* Define a largura da barra */
+}
+
+/* Cor do fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #F5ECD4; /* Cor do fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Cor do "thumb" (parte que se move) */
+::-webkit-scrollbar-thumb {
+    background: tomato; /* Cor do controle de rolagem */
+    border-radius: 10px; /* Deixa arredondado */
+}
+
+/* Quando o mouse passar por cima */
+::-webkit-scrollbar-thumb:hover {
+    background: #e22f2fce; /* Muda a cor quando hover */
+}
+
+
+
+
+/* Estilizando o botão de modo noturno dentro do menu */
+.modo-noturno-btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #A31D1D;
+    transition: transform 0.3s ease-in-out;
+}
+
+.modo-noturno-btn:hover {
+    transform: scale(1.2);
+}

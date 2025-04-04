@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/local.css">
+    <link rel="stylesheet" href="./CSS/dark-mode.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <div class="topo">
+        <img class="logo" src="./imagens/logo.svg" alt="Logo">
+        <h1>Localização</h1>
+        <div class="social">
+            <a href="https://www.facebook.com/josilenedias20" target="_blank"><img src="./imagens/facebook.svg" alt="Facebook"></a>
+            <a href="https://x.com/JosileneeDias1" target="_blank"><img src="./imagens/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/josilenedias_/" target="_blank"><img src="./imagens/instagram.svg" alt="Instagram"></a>
+        </div>
+    </div>
+    <!-- Navegação -->
+    <nav>
+        <div class="menu-hamburguer" onclick="toggleMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <ul class="home">
+            <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="./historia.html" onclick="closeMenu()">História</a></li>
+            <li><a href="./local.html" onclick="closeMenu()">Local</a></li>
+            <li><a href="./cadastro.html" onclick="closeMenu()">Cadastro</a></li>
+            <li><a href="./destinos.html" onclick="closeMenu()">Destinos</a></li>
+            <li><a href="./SAC.html" onclick="closeMenu()">SAC</a></li>
+            <li>
+                <!-- Botão de Modo Noturno no Menu -->
+                <a href="#" id="modo-noturno" class="modo-noturno-btn">🌙</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Conteúdo Principal -->                                                    
+    <div class="conteiner">
+        <h2>Nosso Local</h2>
+        <p>Venha nos fazer uma visita:</p>
+        <div class="iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140.59985613296942!2d12.574215110644708!3d55.6785956511509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253ab4c601375%3A0xac157e8d719a45f!2sCinnamon%20%26%20Coffee!5e0!3m2!1spt-BR!2sbr!4v1737664553788!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="rodape">
+            <a href="./cadastro.html">Cadastro</a> |
+            <a href="./SAC.html">SAC</a> |
+            <a href="./local.html">Localização</a>
+            <div class="footer">
+                <p>Josilene Dias</p>
+                <p>1diasjosilene@gmail.com | (68) 99219-1861</p>
+            </div>
+            <div class="copy">
+                <span class="footer_copyright">© Copyright 2024-2025 JDworld - Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/modo-noturno.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
