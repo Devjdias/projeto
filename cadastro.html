@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./CSS/dark-mode.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section>
+        <!-- Cabeçalho da página -->
+        <div class="topo">
+            <img class="logo" src="./imagens/logo.svg" alt="Logo">
+            <h1>Cadastro</h1>
+            <div class="social">
+                <a href="https://www.facebook.com/josilenedias20" target="_blank"><img src="./imagens/facebook.svg"
+                        alt="Facebook"></a>
+                <a href="https://x.com/JosileneeDias1" target="_blank"><img src="./imagens/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/josilenedias_/" target="_blank"><img src="./imagens/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <!-- Navegação -->
+        <nav>
+            <div class="menu-hamburguer" onclick="toggleMenu()">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <ul class="home">
+                <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
+                <li><a href="./historia.html" onclick="closeMenu()">História</a></li>
+                <li><a href="./local.html" onclick="closeMenu()">Local</a></li>
+                <li><a href="./cadastro.html" onclick="closeMenu()">Cadastro</a></li>
+                <li><a href="./destinos.html" onclick="closeMenu()">Destinos</a></li>
+                <li><a href="./SAC.html" onclick="closeMenu()">SAC</a></li>
+                <li>
+                    <a href="#" id="modo-noturno" class="modo-noturno-btn">🌙</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Formulário de Cadastro -->
+        <div class="wrapper active-btnPopup">
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="form-box register">
+                <h2>Cadastro</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" name="senha" id="senha" required>
+                        <label for="senha">Senha:</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Concordo com os termos</label>
+                    </div>
+                    <button type="submit" class="btn">Cadastrar</button>
+                    <div class="login-register">
+                        <p>Já tem uma conta? <a href="#" class="login-link">Faça login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <footer id="contato">
+            <div class="rodape">
+                <a href="./cadastro.html">Cadastro</a> |
+                <a href="./SAC.html">SAC</a> |
+                <a href="./local.html">Localização</a>
+                <div class="footer">
+                    <p>Josilene Dias</p>
+                    <p>1diasjosilene@gmail.com | (68) 99219-1861</p>
+                </div>
+                <div class="copy">
+                    <span class="footer_copyright">© Copyright 2024-2025 JDworld - Todos os direitos reservados.</span>
+                </div>
+            </div>
+        </footer>
+    </section>
+ <script src="./js/menu.js"></script>
+ <script src="./js/modo-noturno.js"></script>
+</body>  
+</html>
